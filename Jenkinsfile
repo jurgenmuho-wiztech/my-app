@@ -6,7 +6,10 @@ pipeline {
                 bat "mvn clean"
             }
         }
-        stage('--test--') {
+        stage('print'){
+            echo "jurrgen"
+        }
+            stage('--test--') {
             steps {
                 bat "mvn test"
             }
