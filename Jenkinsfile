@@ -7,9 +7,11 @@ pipeline {
             }
         }
         stage('print'){
-            echo "jurrgen"
+             steps {
+                 echo "jurrgen"
+             }
         }
-            stage('--test--') {
+        stage('--test--') {
             steps {
                 bat "mvn test"
             }
