@@ -13,12 +13,12 @@ pipeline {
         }
         stage('--test--') {
             steps {
-                bat "mvn clean test"
+                bat "mvn test"
             }
         }
         stage('--package--') {
             steps {
-                bat "mvn clean package"
+                bat "mvn package"
             }
         }
     }
