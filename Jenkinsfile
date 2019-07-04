@@ -13,7 +13,7 @@ pipeline {
         }
         stage('--test--') {
             steps {
-                bat "mvn test"
+                bat "mvn clean test"
             }
         }
         stage('--package--') {
