@@ -13,7 +13,7 @@ pipeline {
         }
         stage('--test--') {
             steps {
-                bat ""
+                bat label: '', script: 'mvn test'
             }
         }
         stage('--package--') {
