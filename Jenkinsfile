@@ -6,14 +6,9 @@ pipeline {
                 sh "mvn clean"
             }
         }
-        stage('print'){
-             steps {
-                 echo "jurrgen"
-             }
-        }
         stage('--test--') {
             steps {
-                sh "mvn clean test"
+                sh "mvn test"
             }
         }
         stage('--package--') {
